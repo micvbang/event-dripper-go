@@ -14,7 +14,7 @@ type Client struct {
 }
 
 func NewClient(client HTTPDo, apiKey string) *Client {
-	return NewClientWithHost(client, apiKey, "http://localhost:8000")
+	return NewClientWithHost(client, apiKey, "https://api.production.event-dripper.haps.pw")
 }
 
 func NewClientWithHost(client HTTPDo, apiKey string, host string) *Client {
